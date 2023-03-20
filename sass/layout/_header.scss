@@ -1,18 +1,25 @@
 .l-header {
     background: white;
-    height: 80px;
+    // height: 80px;
     display: flex;
     align-items: center;
     justify-content: space-between;
-    &__logo{
+    padding: 8px;
+
+    &__logo {
         width: 72px;
         height: 72px;
         object-fit: cover;
     }
-    &__nav{
-        &__list{
-            display: flex;
-            align-items: center;
+
+    &__nav {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-self: center;
+
+        &__list {
+            padding: 0 8px;
         }
     }
 }

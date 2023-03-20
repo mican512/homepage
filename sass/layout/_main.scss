@@ -1,17 +1,51 @@
 .l-main {
-    &__services{
+    &__profile {
+        display: grid;
+        grid-row: 300px;
+
+        &__title {
+            grid-row: 1;
+            grid-column: 1;
+        }
+        &__content {
+            grid-row: 2;
+            grid-column: 1;
+        }
+    }
+    &__services {
+        background-color: #ffffff;
         display: flex;
         flex-direction: column;
         align-items: center;
         justify-content: center;
-        &__title {}
+
+        &__title {
+            color: #2cccc4;
+        }
+
         &__content {
             display: flex;
             flex-direction: row;
             align-items: center;
-            justify-self: center;
-            &__services {
-                
+            justify-content: space-around;
+            text-align: center;
+
+            &__details {
+                // border: 1px solid blue;
+                padding: 8px;
+                margin: 40px 80px;
+
+                &__icon {
+                    width: 120px;
+                }
+
+                &__name {
+                    margin: 24px 0 0 0;
+                    text-align: center;
+                    font-size: 32px;
+                    font-weight: 600;
+                    align-self: flex-end;
+                }
             }
         }
     }
